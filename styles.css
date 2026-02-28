@@ -1,0 +1,26 @@
+.blog {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.blog a {
+    color: #bb86fc;
+}
+
+.blog h1, .blog h2, .blog h3 {
+    color: #ffffff;
+}
+
+.blog p {
+    color: #e0e0e0;
+}
+
+.blog header {
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+.blog footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+}
