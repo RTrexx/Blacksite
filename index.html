@@ -3,48 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Truth - Dark Themed Blog</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #232323;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #ffffff;
-        }
-        article {
-            margin: 20px;
-            padding: 20px;
-            background-color: #1f1f1f;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #232323;
-        }
-    </style>
+    <title>Enhanced Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>The Truth</h1>
-        <p>Welcome to the dark-themed blog where we explore truths unmasked.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#featured">Featured Articles</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <article>
-        <h2>Latest Post</h2>
-        <p>Your latest insights and thoughts will go here!</p>
-    </article>
+    <section id="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Your one-stop destination for the latest news and articles.</p>
+    </section>
+    <section id="featured">
+        <h2>Featured Articles</h2>
+        <div class="articles-grid">
+            <article>
+                <h3>Article 1</h3>
+                <p>Summary of article 1.</p>
+            </article>
+            <article>
+                <h3>Article 2</h3>
+                <p>Summary of article 2.</p>
+            </article>
+            <article>
+                <h3>Article 3</h3>
+                <p>Summary of article 3.</p>
+            </article>
+        </div>
+    </section>
+    <section id="stats">
+        <h2>Website Stats</h2>
+        <p>Visitors: 1,000</p>
+        <p>Articles: 100</p>
+        <p>Subscribers: 500</p>
+    </section>
+    <section id="newsletter">
+        <h2>Sign Up for Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2026 The Truth Blog</p>
+        <p>&copy; 2026 Your Website.</p>
     </footer>
 </body>
 </html>
