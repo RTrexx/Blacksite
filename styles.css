@@ -1,26 +1,73 @@
-.blog {
-    background-color: #121212;
-    color: #ffffff;
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --border-color: #333333;
+    --hover-color: #444444;
+    --font-family: 'Roboto', sans-serif;
 }
 
-.blog a {
-    color: #bb86fc;
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
 }
 
-.blog h1, .blog h2, .blog h3 {
-    color: #ffffff;
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.blog p {
-    color: #e0e0e0;
+h1, h2, h3 {
+    color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
-.blog header {
-    background-color: #1e1e1e;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.blog footer {
+.card {
     background-color: #1e1e1e;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header {
+        padding: 15px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
 }
